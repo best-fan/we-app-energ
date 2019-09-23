@@ -1,0 +1,194 @@
+/**index.wxss**/
+
+page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(34,193,195), 	rgba(236,202,129,0.7)); /* 标准语法 */
+}
+
+.star_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.56;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.star_img {
+  background-image: url("http://image.51what.cn/public/upload/20190829/6b9d8d8c6971e781cf6d6469ef127da1.png");
+  opacity: 0.15;
+  /* background-size: 100rpx 100rpx; */
+}
+
+.star_imgs {
+  background-image: url("	http://image.51what.cn/public/upload/20190830/ace735e805e4139811733c540bbe127b.png");
+  background-size: 670rpx 810rpx;
+}
+
+.foot_icon {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.view_content {
+  padding: 0 30rpx;
+  padding-top: 20rpx;
+  position: relative;
+  z-index: 2;
+}
+
+.view_content>.content_top:first-child {
+  margin-bottom: 10rpx;
+}
+
+.content_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_left, .top_right {
+  display: flex;
+  align-items: center;
+}
+
+.view_whatenergy {
+  color: #fff;
+  font-size: 30rpx;
+  font-family: 'wangte';
+  letter-spacing: 4rpx;
+  display: flex;
+}
+
+.view_whatenergy .text_C {
+  margin-top: -3rpx;
+}
+
+.text_C {
+  font-size: 34rpx;
+  display: block;
+}
+
+.img_whatenergy {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 7rpx;
+}
+
+.view_myenergy {
+  font-size: 30rpx;
+  color: #feffff;
+  font-family: 'wangte';
+  letter-spacing: 4rpx;
+  display: flex;
+}
+
+.img_energy {
+  width: 48rpx;
+  height: 85rpx;
+}
+
+.view_energy_num {
+  font-family: 'wangte';
+  color: white;
+  font-size: 80rpx;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.img_getenergy {
+  width: 178rpx;
+  height: 78rpx;
+}
+
+/* 能量 */
+
+.view_energy {
+  min-height: 350rpx;
+  padding-top: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20rpx;
+  padding-bottom: 60px;
+  margin-top: 60rpx;
+  /* overflow: hidden; *//* border: 1px solid #4CD964; */
+}
+
+.view_energy_list {
+  position: relative;
+  height: 130rpx;
+  width: 116rpx;
+  text-align: center;
+  /* border: 1px solid #FEFFFF; */
+}
+
+@keyframes heart {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(0, 6px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes lines {
+  from {
+    transform: translate(0px, 0);
+  }
+
+  to {
+    transform: translate(3px, 0);
+  }
+}
+
+.energy_title {
+  font-size: 23rpx;
+  line-height: 110rpx;
+  letter-spacing: 2rpx;
+  color: white;
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  text-align: center;
+  font-family: 'wangte';
+  background-image: url('http://image.51what.cn/public/upload/20190830/7addf9a8844d06bbddbdf30a31ea2fc5.png');
+  background-size: 100% 100%;
+  /* margin: 0 15rpx; */
+}
+
+.energy_tips {
+  margin-top: -10rpx;
+  font-size: 20rpx;
+  color: white;
+}
+
+.view_collect {
+  text-align: center;
+}
+
+.img_collect {
+  width: 260rpx;
+  height: 113rpx;
+  /* background: white;
+  border-radius: 10%; */
+  animation: mycollect 1.0s ease-in-out 0.7s infinite alternate;
+}
+
+@keyframes mycollect {
+  from {
+    transform: translate(-6px, 0);
+  }
+
+  to {
+    transform: translate(6px, 0);
+  }
+}
